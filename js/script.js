@@ -119,4 +119,21 @@ $(document).ready(function() {
     // stops the anchor tage from performing default action
     return false;
   });
+
+  // when navigation is at top it will be a fixed navigation bar
+  const nav = $('#navigation');
+  const navTop = nav.offset().top;
+
+  $(window).on('scroll', stickyNavigation);
+
+  function stickyNavigation() {
+    const body = $('body');
+
+    // if we scroll past top of navbar
+    if ($(window).scrollTop() >= navTop) {
+      body.addClass('fixedNav');
+    } else {
+      body.removeClass('fixedNav');
+    }
+  }
 });

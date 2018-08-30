@@ -30,6 +30,11 @@ body {
   background-size: 100%;
 }
 
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
+
 /*---PHOTO SLIDE SECTION---*/
 .overlay {
   width: 100%;
