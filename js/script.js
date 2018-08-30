@@ -116,10 +116,20 @@ $(document).ready(function() {
       }
     });
 
-    // stops the anchor tage from performing default action
+    // stops the anchor tag from performing default action
     return false;
   });
 
+  //---NAVIGATION BAR SLIDE TO SECTION ON LINK CLICK---
+  $('#navigation li a').click(function(e) {
+    e.preventDefault();
+
+    const targetElement = $(this).attr('href');
+    const targetPosition = $(targetElement).offset().top;
+    $('html, body').animate({ scrollTop: targetPosition - 50 }, 'slow');
+  });
+
+  //---NAVIGATION BAR FIX TO TOP---
   // when navigation is at top it will be a fixed navigation bar
   const nav = $('#navigation');
   const navTop = nav.offset().top;
@@ -131,8 +141,11 @@ $(document).ready(function() {
 
     // if we scroll past top of navbar
     if ($(window).scrollTop() >= navTop) {
+      // add these pixels worth of height to stop the navbar jumping when fixed
+      body.css('padding-top', nav.outerHeight() + 'px');
       body.addClass('fixedNav');
     } else {
+      body.css('padding-top', 0);
       body.removeClass('fixedNav');
     }
   }
