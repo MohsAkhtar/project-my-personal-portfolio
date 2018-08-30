@@ -147,7 +147,9 @@ body {
   margin: 0;
 }
 
-.squareIcon .fa {
+.squareIcon .fa,
+.squareIcon .fas,
+.squareIcon .fab {
   position: absolute;
   left: 50%;
   top: -10%;
