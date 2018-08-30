@@ -83,4 +83,6 @@ $(document).ready(function() {
       countUpFinished = true;
     }
   });
+
+  $('[data-fancybox]').fancybox();
 });
