@@ -55,4 +55,12 @@ $(document).ready(function() {
       });
     }
   });
+
+  // loop through elements, retrieve number and countup
+  $('.counter').each(function() {
+    const element = $(this);
+    const endVal = parseInt(element.text());
+
+    element.countup(endVal);
+  });
 });
