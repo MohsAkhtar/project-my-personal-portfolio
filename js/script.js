@@ -1,10 +1,12 @@
 $(document).ready(function() {
+  //---SUPER SLIDES---
   $('#slides').superslides({
     animation: 'fade',
     play: 5000,
     pagination: false
   });
 
+  //---TYPED---
   const typed = new Typed('.typed', {
     strings: [
       'Software Developer',
@@ -17,9 +19,11 @@ $(document).ready(function() {
     showCursor: false
   });
 
+  //---OWL CAROUSEL---
   $('.owl-carousel').owlCarousel({
     loop: true,
     items: 4,
+    // responsive: {'screen size': {'no. items to display'}}
     responsive: {
       0: {
         items: 1
@@ -36,13 +40,17 @@ $(document).ready(function() {
     }
   });
 
+  //---SECTION OFFSETS---
   const skillsTopOffset = $('.skillsSection').offset().top;
   const statsTopOffset = $('.statsSection').offset().top;
-  // to stop the counter keep firing off when we scroll
+
+  // boolean to stop 'countup' constantly firing off when we scroll
   let countUpFinished = false;
 
-  // animations execute when we reach the Y offset of the section + 200px
   $(window).scroll(function() {
+    // animations execute when we reach the Y offset of a section + 200px
+
+    //---EASY PIE CHART---
     if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
       $('.chart').easyPieChart({
         easing: 'easeInOut',
@@ -59,18 +67,19 @@ $(document).ready(function() {
       });
     }
 
-    // we make sure we've reached the section and we stop the counter
+    //---COUNT UP---
     if (
       !countUpFinished &&
       window.pageYOffset > statsTopOffset - $(window).height() + 200
     ) {
-      // loop through elements, retrieve number and countup
+      // loop through elements, retrieve text, parse, set to endVal and use it for limit of 'countup'
       $('.counter').each(function() {
         const element = $(this);
         const endVal = parseInt(element.text());
 
         element.countup(endVal);
       });
+      // stop countup from repeating when section is reached
       countUpFinished = true;
     }
   });
