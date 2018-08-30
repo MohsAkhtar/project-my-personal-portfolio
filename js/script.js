@@ -84,5 +84,16 @@ $(document).ready(function() {
     }
   });
 
+  //---FANCYBOX---
   $('[data-fancybox]').fancybox();
+
+  //---ISOTOPE---
+  $('.items').isotope({
+    filter: '*',
+    animationOptions: {
+      duration: 1500,
+      easing: linear,
+      queue: false
+    }
+  });
 });
