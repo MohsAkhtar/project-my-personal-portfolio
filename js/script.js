@@ -5,7 +5,7 @@ $(document).ready(function() {
     pagination: false
   });
 
-  var typed = new Typed('.typed', {
+  const typed = new Typed('.typed', {
     strings: [
       'Software Developer',
       'Web Developer',
