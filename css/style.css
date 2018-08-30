@@ -5,6 +5,11 @@
   z-index: 3;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+#slides .slides-navigation {
+  z-index: 6;
+}
+
 #slides .slides-navigation .prev,
 #slides .slides-navigation .next {
   width: 47px;
@@ -21,4 +26,28 @@
 #slides .slides-navigation .next {
   right: 20px;
   background-image: url(../icons/next.png);
+}
+
+.titleMessage {
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+  height: 250px;
+  top: 50%;
+  text-align: center;
+  margin-top: -125px;
+}
+
+.titleMessage .heading p {
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 100;
+  letter-spacing: 7px;
+}
+
+.titleMessage .heading .main {
+  font-size: 50px;
+}
+.titleMessage .heading .sub {
+  font-size: 23px;
 }
