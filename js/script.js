@@ -37,7 +37,11 @@ $(document).ready(function() {
   });
 
   const skillsTopOffset = $('.skillsSection').offset().top;
+  const statsTopOffset = $('.statsSection').offset().top;
+  // to stop the counter keep firing off when we scroll
+  let countUpFinished = false;
 
+  // animations execute when we reach the Y offset of the section + 200px
   $(window).scroll(function() {
     if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
       $('.chart').easyPieChart({
@@ -48,19 +52,26 @@ $(document).ready(function() {
         lineWidth: 4,
         size: 152,
         onStep: function(from, to, percent) {
-          $(this.el)
+          $(this.element)
             .find('.percent')
             .text(Math.round(percent));
         }
       });
     }
-  });
 
-  // loop through elements, retrieve number and countup
-  $('.counter').each(function() {
-    const element = $(this);
-    const endVal = parseInt(element.text());
+    // we make sure we've reached the section and we stop the counter
+    if (
+      !countUpFinished &&
+      window.pageYOffset > statsTopOffset - $(window).height() + 200
+    ) {
+      // loop through elements, retrieve number and countup
+      $('.counter').each(function() {
+        const element = $(this);
+        const endVal = parseInt(element.text());
 
-    element.countup(endVal);
+        element.countup(endVal);
+      });
+      countUpFinished = true;
+    }
   });
 });
