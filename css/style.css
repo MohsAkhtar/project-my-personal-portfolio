@@ -146,3 +146,14 @@ body {
   font-weight: 600;
   margin: 0;
 }
+
+.squareIcon .fa {
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  width: 40%;
+  height: 60px;
+  font-size: 45px;
+  margin-left: -20%;
+  color: #444;
+}
