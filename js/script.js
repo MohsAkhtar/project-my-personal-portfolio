@@ -1,3 +1,10 @@
+$(window).on('load', function() {
+  // fading out loader then background for smooth transition
+  $('.loader .inner').fadeOut(500, function() {
+    $('.loader').fadeOut(750);
+  });
+});
+
 $(document).ready(function() {
   //---SUPER SLIDES---
   $('#slides').superslides({
