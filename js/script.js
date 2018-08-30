@@ -92,7 +92,11 @@ $(document).ready(function() {
   });
 
   //---FANCYBOX---
-  $('[data-fancybox]').fancybox();
+  //$('[data-fancybox]').fancybox();
+
+  $('[data-fancybox="gallery"]').fancybox({
+    padding: 0
+  });
 
   //---ISOTOPE---
   // default filter (shows all)

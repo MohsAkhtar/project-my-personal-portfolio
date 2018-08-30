@@ -308,7 +308,8 @@ body {
   margin-top: 9px;
 }
 
-.items a {
+.items .openButton,
+.items .projectLink {
   width: 40px;
   height: 40px;
   background-color: #e74c3c;
@@ -379,4 +380,8 @@ body {
 
 .copyrightSection p {
   margin: 0;
+}
+
+.hidden {
+  display: none;
 }
