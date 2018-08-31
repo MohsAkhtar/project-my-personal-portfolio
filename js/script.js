@@ -93,10 +93,21 @@ $(document).ready(function() {
 
   //---FANCYBOX---
   $('[data-fancybox^="gallery"]').fancybox({
+    loop: true,
+    keyboard: true,
+    arrows: true,
     thumbs: {
       autoStart: true
     },
-    buttons: ['zoom', 'close']
+    buttons: [
+      'zoom',
+      'share',
+      'slideShow',
+      'fullScreen',
+      'download',
+      'thumbs',
+      'close'
+    ]
   });
 
   // $('[data-fancybox="gallery"]').fancybox({
