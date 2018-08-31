@@ -130,6 +130,25 @@ body {
   margin-left: 20px;
 }
 
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+  position: absolute;
+  top: 30px;
+  width: 30px;
+  margin: auto !important;
+}
+
+.owl-carousel .owl-prev {
+  left: -35px;
+}
+
+.owl-carousel .owl-next {
+  right: -10px;
+}
+
+.owl-carousel .owl-dots {
+  display: none !important;
+}
 .chart {
   position: relative;
   width: 152px;
@@ -381,6 +400,11 @@ body {
   padding: 0;
 }
 
+.item .hidden {
+  display: none;
+}
+
+/*---COPYRIGHT SECTION---*/
 .copyrightSection {
   background-color: #000;
   color: #fff;
@@ -390,8 +414,4 @@ body {
 
 .copyrightSection p {
   margin: 0;
-}
-
-.hidden {
-  display: none;
 }

@@ -30,6 +30,9 @@ $(document).ready(function() {
   $('.owl-carousel').owlCarousel({
     loop: true,
     items: 4,
+    nav: true,
+    navText: ["<img src='../icons/prev.png'>", "<img src='../icons/next.png'>"],
+    dots: true,
     // responsive: {'screen size': {'no. items to display'}}
     responsive: {
       0: {
@@ -96,6 +99,7 @@ $(document).ready(function() {
     loop: true,
     keyboard: true,
     arrows: true,
+    padding: 0,
     thumbs: {
       autoStart: true
     },
@@ -109,10 +113,6 @@ $(document).ready(function() {
       'close'
     ]
   });
-
-  // $('[data-fancybox="gallery"]').fancybox({
-  //   padding: 0
-  // });
 
   //---ISOTOPE---
   // default filter (shows all)
