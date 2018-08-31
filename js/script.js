@@ -37,71 +37,16 @@ $(document).ready(function() {
     showCursor: false
   });
 
-  //---OWL CAROUSEL---
-  // $('.owl-carousel').owlCarousel({
-  //   loop: true,
-  //   items: 4,
-  //   nav: true,
-  //   navText: ["<img src='../icons/prev.png'>", "<img src='../icons/next.png'>"],
-  //   autoplay: true,
-  //   transitionStyle: 'fade',
-  //   // responsive: {'screen size': {'no. items to display'}}
-  //   responsive: {
-  //     0: {
-  //       items: 1
-  //     },
-  //     480: {
-  //       items: 2
-  //     },
-  //     768: {
-  //       items: 3
-  //     },
-  //     938: {
-  //       items: 4
-  //     }
-  //   }
-  // });
-
   //---SLICK---
   $('.slick').slick({
-    infinite: true,
     dots: false,
-    centerPadding: '0px',
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [
-      {
-        breakpoint: 938,
-        settings: {
-          centerPadding: '20px',
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          centerPadding: '20px',
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          centerPadding: '20px',
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          speed: 1000,
-          infinite: false
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
+    infinite: true,
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    cssEase: 'linear'
   });
 
   //---SECTION OFFSETS---
