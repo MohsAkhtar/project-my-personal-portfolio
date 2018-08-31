@@ -151,7 +151,6 @@ body {
 
 /*---ABOUT SECTION---*/
 .aboutSection .aboutImage {
-  margin-top: 60px;
   max-width: 100%;
   -webkit-box-shadow: -9px 10px 33px 2px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: -9px 10px 33px 2px rgba(0, 0, 0, 0.56);
@@ -160,6 +159,7 @@ body {
 
 .aboutSection .aboutIntro {
   padding-left: 50px;
+  padding-top: 50px;
 }
 .aboutSection .aboutIntro p {
   padding: 10px 0;
