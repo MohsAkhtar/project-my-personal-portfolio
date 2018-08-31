@@ -118,6 +118,11 @@ body {
   max-width: 100%;
 }
 
+.aboutSection .technologies .fab {
+  padding: 10px;
+  font-size: 40px;
+}
+
 /*---SKILLS SECTION---*/
 .skillsSection,
 .contactSection {
@@ -175,7 +180,6 @@ body {
 }
 
 /*---EXPERIENCE SECTION---*/
-
 .squareItem {
   margin-top: 30px;
   position: relative;
@@ -234,7 +238,10 @@ body {
 }
 
 /*---CONTACT SECTION---*/
-.contactButton {
+.contactSection p {
+  font-size: 24px;
+}
+.contactSection .contactButton {
   color: #fff;
   padding: 12px 20px;
   top: -30px;
@@ -249,7 +256,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.contactButton:hover {
+.contactSection .contactButton:hover {
   text-decoration: none;
   color: #1f4788;
   background-color: #fff;
