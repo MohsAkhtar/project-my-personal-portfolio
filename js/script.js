@@ -32,7 +32,8 @@ $(document).ready(function() {
     items: 4,
     nav: true,
     navText: ["<img src='../icons/prev.png'>", "<img src='../icons/next.png'>"],
-    dots: true,
+    autoplay: true,
+    transitionStyle: 'fade',
     // responsive: {'screen size': {'no. items to display'}}
     responsive: {
       0: {
