@@ -217,6 +217,11 @@ body {
   padding: 20px 0;
 }
 
+.technologyGroup p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
 /*---SKILLS SECTION---*/
 .skillsSection,
 .contactSection {
@@ -224,7 +229,7 @@ body {
   color: #fff;
 }
 
-.skill {
+.skillsSection .skill {
   text-align: center;
   margin-left: 20px;
 }
@@ -248,7 +253,7 @@ body {
 .owl-carousel .owl-dots {
   display: none !important;
 }
-.chart {
+.skillsSection .chart {
   position: relative;
   width: 152px;
   height: 152px;
@@ -256,21 +261,25 @@ body {
   text-align: center;
 }
 
-.chart canvas {
+.skillsSection .chart canvas {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-.chart .percent {
+.skillsSection .chart .percent {
   color: #fff;
   line-height: 152px;
   display: inline-block;
   font-size: 35px;
 }
 
-.chart .percent:after {
+.skillsSection .chart .percent:after {
   content: '%';
+}
+
+.skillsSection h4 {
+  padding: 20px 0;
 }
 
 /*---EXPERIENCE SECTION---*/
