@@ -28,6 +28,14 @@ $(document).ready(function() {
     showCursor: false
   });
 
+  const typedIntro = new Typed('.typedIntro', {
+    strings: ['My name is Mohs Akhtar'],
+    typeSpeed: 80,
+    loop: false,
+    startDelay: 1000,
+    showCursor: false
+  });
+
   //---OWL CAROUSEL---
   $('.owl-carousel').owlCarousel({
     loop: true,
