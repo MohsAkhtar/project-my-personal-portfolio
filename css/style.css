@@ -282,6 +282,16 @@ body {
   overflow: hidden;
 }
 
+.items .thumbnail {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 200px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .items li img {
   width: 100%;
   -webkit-transition: all 0.2s linear, 1s;
