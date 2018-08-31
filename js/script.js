@@ -11,7 +11,7 @@ $(document).ready(function() {
     animation: 'fade',
     slide_easing: 'easeInOutCubic',
     slide_speed: 800,
-    play: 3000,
+    play: 4000,
     pagination: false
   });
 
@@ -42,7 +42,6 @@ $(document).ready(function() {
     dots: false,
     infinite: true,
     centerMode: true,
-    centerPadding: '60px',
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,

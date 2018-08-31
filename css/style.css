@@ -169,6 +169,13 @@ body {
 }
 
 /*---SKILLS SECTION---*/
+/* responsiveness for mobile devices */
+@media (max-width: 568px) {
+  .skillsSection .slick {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
 .skillsSection .skill {
   text-align: center;
   padding-top: 120px;
