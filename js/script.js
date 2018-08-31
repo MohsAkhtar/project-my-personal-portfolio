@@ -9,7 +9,9 @@ $(document).ready(function() {
   //---SUPER SLIDES---
   $('#slides').superslides({
     animation: 'fade',
-    play: 5000,
+    slide_easing: 'easeInOutCubic',
+    slide_speed: 800,
+    play: 3000,
     pagination: false
   });
 
@@ -20,7 +22,7 @@ $(document).ready(function() {
       'Web Developer',
       'Computer Science Graduate'
     ],
-    typeSpeed: 70,
+    typeSpeed: 80,
     loop: true,
     startDelay: 1000,
     showCursor: false
@@ -120,7 +122,7 @@ $(document).ready(function() {
   $('.items').isotope({
     filter: '*',
     animationOptions: {
-      duration: 1500,
+      duration: 5000,
       easing: 'linear',
       queue: false
     }
@@ -138,7 +140,7 @@ $(document).ready(function() {
     $('.items').isotope({
       filter: selector,
       animationOptions: {
-        duration: 2500,
+        duration: 5000,
         easing: 'linear',
         queue: false
       }

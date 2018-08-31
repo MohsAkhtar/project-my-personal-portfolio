@@ -24,7 +24,7 @@ body {
 
 /*---NAVIGATION---*/
 #navigation {
-  background-color: #e74c3c;
+  background-color: #1f4788;
   padding: 20px 10px;
   z-index: 100;
   width: 100%;
@@ -121,7 +121,7 @@ body {
 /*---SKILLS SECTION---*/
 .skillsSection,
 .contactSection {
-  background-color: #e74c3c;
+  background-color: #1f4788;
   color: #fff;
 }
 
@@ -164,7 +164,7 @@ body {
 }
 
 .chart .percent {
-  color: #000;
+  color: #fff;
   line-height: 152px;
   display: inline-block;
   font-size: 35px;
@@ -211,7 +211,7 @@ body {
   font-size: 56px;
   margin-bottom: 10px;
   font-weight: 400;
-  color: #e74c3c;
+  color: #1f4788;
 }
 
 .squareContent h3 {
@@ -251,7 +251,7 @@ body {
 
 .contactButton:hover {
   text-decoration: none;
-  color: #e74c3c;
+  color: #1f4788;
   background-color: #fff;
 }
 
@@ -267,6 +267,44 @@ body {
   border: 1px solid #bdc3c7;
   padding: 10px;
   display: block;
+  text-decoration: none;
+}
+
+/* Underline From Left */
+.portfolioSection .filter a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.portfolioSection .filter a:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #1f4788;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.filter a:hover:before,
+.filter a:focus:before,
+.filter a:active:before {
+  right: 0;
 }
 
 .portfolioSection .filter li {
@@ -275,8 +313,8 @@ body {
 }
 
 .portfolioSection .filter .current {
-  background-color: #e74c3c;
-  border-color: #e74c3c;
+  background-color: #1f4788;
+  border-color: #1f4788;
   color: #fff;
 }
 
@@ -340,7 +378,7 @@ body {
 .portfolioSection .items .projectLink {
   width: 40px;
   height: 40px;
-  background-color: #e74c3c;
+  background-color: #1f4788;
   border-radius: 5px;
   position: relative;
   display: inline-block;
@@ -421,7 +459,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   padding: 10px 5px;
-  color: #e74c3c;
+  color: #1f4788;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
