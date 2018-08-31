@@ -138,7 +138,7 @@ $(document).ready(function() {
     $('.items').isotope({
       filter: selector,
       animationOptions: {
-        duration: 1500,
+        duration: 2500,
         easing: 'linear',
         queue: false
       }
