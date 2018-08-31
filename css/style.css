@@ -164,11 +164,20 @@ body {
 }
 
 /*---ABOUT SECTION---*/
-.aboutImage {
+.aboutSection .aboutImage {
+  margin-top: 60px;
   max-width: 100%;
   -webkit-box-shadow: -9px 10px 33px 2px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: -9px 10px 33px 2px rgba(0, 0, 0, 0.56);
   box-shadow: -9px 10px 33px 2px rgba(0, 0, 0, 0.56);
+}
+
+.aboutSection .intro {
+  padding-left: 50px;
+}
+
+.aboutSection .technologies {
+  text-align: center;
 }
 
 .aboutSection .technologies .fab {
@@ -184,33 +193,65 @@ body {
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
 }
-.aboutSection .technologies .fab:hover,
-.aboutSection .technologies .fab:focus,
-.aboutSection .technologies .fab:active {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-}
+
 .aboutSection .technologies .red {
   color: #e74c3c;
+}
+
+.aboutSection .technologies .red:hover,
+.aboutSection .technologies .red:focus,
+.aboutSection .technologies .red:active {
+  box-shadow: 0 0 8px #e74c3c;
 }
 
 .aboutSection .technologies .green {
   color: #2ecc71;
 }
 
+.aboutSection .technologies .green:hover,
+.aboutSection .technologies .green:focus,
+.aboutSection .technologies .green:active {
+  box-shadow: 0 0 8px #2ecc71;
+}
+
 .aboutSection .technologies .blue {
   color: #3498db;
+}
+
+.aboutSection .technologies .blue:hover,
+.aboutSection .technologies .blue:focus,
+.aboutSection .technologies .blue:active {
+  box-shadow: 0 0 8px #3498d1;
 }
 
 .aboutSection .technologies .dark-blue {
   color: #2980b9;
 }
 
+.aboutSection .technologies .dark-blue:hover,
+.aboutSection .technologies .dark-blue:focus,
+.aboutSection .technologies .dark-blue:active {
+  box-shadow: 0 0 8px #2980b9;
+}
+
 .aboutSection .technologies .yellow {
   color: #f1c40f;
 }
 
+.aboutSection .technologies .yellow:hover,
+.aboutSection .technologies .yellow:focus,
+.aboutSection .technologies .yellow:active {
+  box-shadow: 0 0 8px #f1c40f;
+}
+
 .aboutSection .technologies .grey {
   color: #bdc3c7;
+}
+
+.aboutSection .technologies .grey:hover,
+.aboutSection .technologies .grey:focus,
+.aboutSection .technologies .grey:active {
+  box-shadow: 0 0 8px #bdc3c7;
 }
 
 .technologyGroup {
@@ -221,6 +262,10 @@ body {
   font-size: 24px;
   font-weight: 400;
 }
+
+.technologyGroup .aboutIntro span{
+    color: red;
+  }
 
 /*---SKILLS SECTION---*/
 .skillsSection,

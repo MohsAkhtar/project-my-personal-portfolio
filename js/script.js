@@ -29,17 +29,9 @@ $(document).ready(function() {
   });
 
   const typedIntro = new Typed('.typedIntro', {
-    strings: ['Hi, my name is Mohs Akhtar!'],
-    typeSpeed: 40,
+    strings: ['Hi, my name is Mohs Akhtar!', 'Welcome to my page'],
+    typeSpeed: 60,
     backSpeed: 0,
-    loop: false,
-    startDelay: 1000,
-    showCursor: false
-  });
-
-  const typedAbout = new Typed('.typedAbout', {
-    stringsElement: '.typed-strings',
-    typeSpeed: 80,
     loop: false,
     startDelay: 1000,
     showCursor: false
