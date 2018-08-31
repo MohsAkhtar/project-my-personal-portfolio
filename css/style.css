@@ -410,11 +410,11 @@ body {
   color: #fff;
   padding: 30px 5px;
   text-align: center;
+  bottom: 0;
 }
 
 .copyrightSection p {
   margin: 0;
-  bottom: 0;
 }
 
 .copyrightSection a i {
