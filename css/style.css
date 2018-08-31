@@ -256,7 +256,7 @@ body {
 }
 
 /*---PORTFOLIO SECTION---*/
-.portfolioSection .section .heading {
+.section .heading {
   text-align: center;
   padding-bottom: 40px;
   width: 100%;
@@ -301,9 +301,9 @@ body {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.filter a:hover:before,
-.filter a:focus:before,
-.filter a:active:before {
+.portfolioSection .filter a:hover:before,
+.portfolioSection .filter a:focus:before,
+.portfolioSection .filter a:active:before {
   right: 0;
 }
 
@@ -453,12 +453,13 @@ body {
 
 .copyrightSection p {
   margin: 0;
+  padding: 10px;
 }
 
 .copyrightSection a i {
   text-decoration: none;
   font-size: 20px;
-  padding: 10px 5px;
+  padding: 30px 5px;
   color: #1f4788;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
