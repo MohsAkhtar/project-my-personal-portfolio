@@ -17,13 +17,8 @@ $(document).ready(function() {
 
   //---TYPED---
   const typed = new Typed('.typed', {
-    strings: [
-      'Software Developer',
-      'Web Developer',
-      'Computer Science Graduate'
-    ],
+    strings: ['Scroll down...'],
     typeSpeed: 80,
-    loop: true,
     startDelay: 1000,
     showCursor: false
   });
