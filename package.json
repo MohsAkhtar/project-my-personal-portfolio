@@ -1,0 +1,19 @@
+{
+  "name": "project-my-personal-portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio site!",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohsAkhtar/project-my-personal-portfolio.git"
+  },
+  "author": "Mohs Akhtar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohsAkhtar/project-my-personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/MohsAkhtar/project-my-personal-portfolio#readme"
+}

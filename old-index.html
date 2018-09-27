@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/superslides.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
+
+
+    <link rel="icon" type="image/png" href="icons/blueatsign.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mohs Akhtar Portfolio</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+</head>
+
+<body>
+    <div class="loader">
+        <div class="inner">
+
+        </div>
+    </div>
+
+    <div id="slides">
+        <div class="overlay"></div>
+        <div class="slides-container">
+            <img src="img/slide.jpg" alt="">
+            <img src="img/slide2.jpg" alt="">
+            <img src="img/slide3.jpg" alt="">
+            <img src="img/slide4.jpg" alt="">
+        </div>
+        <div class="titleMessage">
+            <div class="heading">
+                <p class="main">Mohs Akhtar</p>
+                <p class="sub typed"></p>
+            </div>
+        </div>
+        <nav class="slides-navigation">
+            <a href="#" class="next"></a>
+            <a href="#" class="prev"></a>
+        </nav>
+    </div>
+
+    <nav id="navigation" class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#stats">Stats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="about" class="aboutSection section">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="aboutImage" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-md-7">
+                    <div class="aboutIntro">
+                        <h4 class="typedIntro"></h4>
+                        <p><span>I love to learn, I love to code.</span> An Edinburgh based computer science graduate who
+                            spends a ridiculous amount of time programming.
+                        </p>
+                        <p>
+                            Proficient in <span>Java</span>, <span>JavaScript</span>, <span>SQL</span> and <span>Android</span>
+                            development. You can catch me working on various projects whether for fun or on my never ending quest of becoming a better
+                            developer!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills" class="skillsSection blueSection section">
+        <div class="container">
+            <div class="row">
+                <div class="heading col-md-12 text-center">
+                    <h2>TECHNICAL SKILLS</h2>
+                    <p>A representation of my proficiency in each skill</p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-6 col-lg-6">
+                    <div class="slick">
+                        <div class="skill">
+                            <span class="chart" data-percent="67%">
+                                <span class="percent">67</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>JavaScript</h4>
+                            <p>The language I stick to for most web development. Currently working on learning the MERN stack.
+                            </p>
+                        </div>
+                        <div class="skill">
+                            <span class="chart" data-percent="75%">
+                                <span class="percent">75</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>Java</h4>
+                            <p>My preferred static typed language. Used for most of my heydays in uni. Also know a bit of
+                                Android development.
+                            </p>
+                        </div>
+                        <div class="skill">
+                            <span class="chart" data-percent="55%">
+                                <span class="percent">55</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>CSS</h4>
+                            <p>Working hard on improving here. So much to learn!</p>
+                        </div>
+                        <div class="skill">
+                            <span class="chart" data-percent="65%">
+                                <span class="percent">65</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>SQL</h4>
+                            <p>Familiar with most database queries such as insert, delete, drop tables etc.</p>
+                        </div>
+                        <div class="skill">
+                            <span class="chart" data-percent="60%">
+                                <span class="percent">60</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>React</h4>
+                            <p>Currently learning this and working on learning the JavaScript specific MERN stack.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-6 col-lg-6">
+                    <div class="technologies">
+                        <div class="proficient technologyGroup">
+                            <p>Proficient:</p>
+                            <i class="red fab fa-java" title="java"></i>
+                            <i class="green fab fa-android" title="android"></i>
+                            <i class="yellow fab fa-js" title="javascript"></i>
+                            <i class="red fab fa-css3" title="css3"></i>
+                            <i class="blue fab fa-html5" title="html5"></i>
+                        </div>
+                        <div class="learning technologyGroup">
+                            <p>Learning:</p>
+                            <i class="dark-blue fab fa-php" title="php"></i>
+                            <i class="dark-blue fab fa-python" title="python"></i>
+                            <i class="blue fab fa-react" title="react"></i>
+                        </div>
+                        <div class="tools technologyGroup">
+                            <p>Tools I use:</p>
+                            <i class="green fab fa-node" title="node"></i>
+                            <i class="red fab fa-npm" title="npm"></i>
+                            <i class="red fab fa-sass" title="sass"></i>
+                            <i class="grey fab fa-windows" title="windows"></i>
+                            <i class="grey fab fa-linux" title="linux"></i>
+                            <i class="red fab fa-git" title="git"></i>
+                        </div>
+                        <div class="todo technologyGroup">
+                            <p>Todo:</p>
+                            <i class="red fab fa-angular" title="angular"></i>
+                            <i class="blue fab fa-vuejs" title="vue"></i>
+                            <i class="red fab fa-laravel" title="laravel"></i>
+                            <i class="blue fab fa-docker" title="docker"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stats" class="statsSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fa fa-clock"></i>
+                                <div class="squareContent">
+                                    <h2 class="counter">4</h2>
+                                    <h3>Years Experience</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fas fa-university"></i>
+                                <div class="squareContent">
+                                    <h2>2:1</h2>
+                                    <h3>BSc Computer Science</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fas fa-code"></i>
+                                <div class="squareContent">
+                                    <h2 class="counter">7</h2>
+                                    <h3>Websites Made</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fab fa-github"></i>
+                                <div class="squareContent">
+                                    <h2 class="counter">34</h2>
+                                    <h3>Projects</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contactSection blueSection section">
+        <div class="col-md-12 text-center">
+            <p class="subHeading">Like what you see?</p>
+            <h2>I'd love to hear from you!</h2>
+            <a href="mailTo:mohsin.akhtar0@gmail.com" class="contactButton">GET IN TOUCH!</a>
+        </div>
+    </div>
+
+    <div id="portfolio" class="portfolioSection section">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    <h2>PORTFOLIO</h2>
+                </div>
+                <div class="filter">
+                    <ul id="filters">
+                        <li><a href="#" data-filter="*" class="current">ALL</a></li>
+                        <li><a href="#" data-filter=".apps">Apps</a></li>
+                        <li><a href="#" data-filter=".websites">Websites</a></li>
+                    </ul>
+                </div>
+                <div class="itemsContainer">
+                    <ul class="items">
+                        <!--PORTFOLIO-->
+                        <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/portfolio/thumbnails/thumbnail_portfolio.png" class="thumbnail" alt="">
+                                <div class="icons">
+                                    <a href="img/portfolio/portfolio_home.png" title="View Image" class="fancybox openButton" data-fancybox="gallery01" data-caption="Behaviour changing app to encourage users to exercise.">
+                                        <i class=" fa fa-search "></i>
+                                    </a>
+                                    <div class="hidden">
+                                        <a class="fancybox" data-fancybox="gallery01" href="img/portfolio/portfolio_work.png"></a>
+                                    </div>
+                                    <a href="https://mohsakhtar.github.io/modern_portfolio_website/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link "></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <!--CONTACT_MGR-->
+                        <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/portfolio/thumbnails/thumbnail_contact_mgr.png" class="thumbnail" alt="">
+                                <div class="icons">
+                                    <a href="img/portfolio/contact_mgr.png" title="View Image" class="openButton" data-fancybox="gallery02" data-caption="A contact manager app created in React">
+                                        <i class=" fa fa-search "></i>
+                                    </a>
+                                    <div class="hidden">
+                                        <a class="fancybox" data-fancybox="gallery02" href="img/portfolio/contact_mgr_add.png"></a>
+                                        <a class="fancybox" data-fancybox="gallery02" href="img/portfolio/contact_mgr_edit.png"></a>
+                                    </div>
+                                    <a href="https://mohsakhtar.github.io/contactmanager/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link "></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <!--MOVIE_APP-->
+                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/portfolio/thumbnails/thumbnail_movie_app.png" class="thumbnail" alt="">
+                                <div class="icons">
+                                    <a href="img/portfolio/movie_app.png" title="View Image" class="openButton" data-fancybox="gallery03" data-caption="Website that pulls data from the imdb api">
+                                        <i class=" fa fa-search "></i>
+                                    </a>
+                                    <div class="hidden">
+                                        <a class="fancybox" data-fancybox="gallery03" href="img/portfolio/movie_app_search.png"></a>
+                                        <a class="fancybox" data-fancybox="gallery03" href="img/portfolio/movie_app_film.png"></a>
+                                    </div>
+                                    <a href="https://mohsakhtar.github.io/movie_info_app/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link "></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <!--BCT_APP-->
+                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/portfolio/thumbnails/thumbnail_bct_app.png" class="thumbnail" alt="">
+                                <div class="icons">
+                                    <a href="img/portfolio/bct_app.png" title="View Image" class="openButton" data-fancybox data-caption="BCT app for encouraging a person to exercise">
+                                        <i class=" fa fa-search "></i>
+                                    </a>
+                                    <a href="https://github.com/MohsAkhtar/behaviour_changing_mobile_app" target="_blank" class="projectLink">
+                                        <i class="fa fa-link "></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <!--NATOURS-->
+                        <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/portfolio/thumbnails/thumbnail_natours.png" class="thumbnail" alt="">
+                                <div class="icons">
+                                    <a href="img/portfolio/natours.png" title="View Image" class="openButton" data-fancybox data-caption="">
+                                        <i class=" fa fa-search "></i>
+                                    </a>
+                                    <a href="https://github.com/MohsAkhtar/natours" target="_blank" class="projectLink">
+                                        <i class="fa fa-link "></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyrightSection section">
+        <div class="col-md-12">
+            <p>&copy; Copyright Mohs Akhtar 2018</p>
+            <a href="https://icons8.com/android-L ">Free icons by Icons8</a>
+            <div class="links">
+                <a href="https://github.com/MohsAkhtar" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/mohsakhtar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailTo:mohsin.akhtar0@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+                <a href="https://twitter.com/MohsAkhtar" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.facebook.com/mohs.akhtar" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.goodreads.com/user/show/4430210-mohs" target="_blank"><i class="fab fa-goodreads"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.easing.1.3.js "></script>
+    <script src="js/jquery.animate-enhanced.min.js "></script>
+    <script src="js/jquery.superslides.min.js "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/jquery.easypiechart.min.js "></script>
+    <script src="js/typed.min.js "></script>
+    <script src="js/countUp.min.js "></script>
+    <script src="js/countUp-jquery.js "></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+        crossorigin="anonymous "></script>
+    <script src="js/isotope.pkgd.min.js "></script>
+    <script src="js/slick.min.js "></script>
+    <script src="js/script.js "></script>
+</body>
+
+</html>
