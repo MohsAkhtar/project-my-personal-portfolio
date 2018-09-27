@@ -9,6 +9,13 @@ const navItems = document.querySelectorAll(".nav-item");
 // Set initial state of menu
 let showMenu = false;
 
+$(window).on("load", function() {
+  // fading out loader then background for smooth transition
+  $(".loader .inner").fadeOut(300, function() {
+    $(".loader").fadeOut(500);
+  });
+});
+
 menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
@@ -32,3 +39,5 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+//$(document).ready(function() {});

@@ -79,11 +79,16 @@
   }
 }
 
-// Smarthphones
+// Smartphones
 @include mediaSm {
   main#home h1 {
     // lower h1 by 10vh
     margin-top: 10vh;
+  }
+
+  .lg-heading {
+    text-align: center;
+    color: black;
   }
 
   // changes work projects to have one col across a row

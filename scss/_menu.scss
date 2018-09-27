@@ -41,7 +41,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -64,6 +63,7 @@
   &-nav {
     margin: 0;
     padding: 0;
+    //opacity: 0.9;
     background: darken($primary-color, 5);
     list-style: none;
     transform: translate3d(0, -100%, 0);
@@ -79,6 +79,7 @@
   &-branding {
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
+    //opacity: 0.9;
     @include easeOut;
 
     &.show {
@@ -107,7 +108,7 @@
 
     // For current page
     &.current > a {
-      color: $secondary-color;
+      color: $color-white;
     }
   }
 
@@ -124,7 +125,7 @@
     @include easeOut;
 
     &:hover {
-      color: $secondary-color;
+      color: $color-white;
     }
   }
 }

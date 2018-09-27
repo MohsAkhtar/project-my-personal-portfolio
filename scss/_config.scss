@@ -1,8 +1,9 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: #e26a75;
+$secondary-color: #961d28;
+$color-white: #fff;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
-$background-opacity: 0.9;
+$background-opacity: 0.8;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -33,7 +34,7 @@ $background-opacity: 0.9;
 // To get a return value have to use function not mixin
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
-    @return #000;
+    @return #5d1219;
   } @else {
     @return #fff;
   }
