@@ -134,7 +134,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #fff; }
+      color: #178f82; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -146,7 +146,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #fff; }
+      color: #178f82; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -182,7 +182,7 @@ body {
       height: 100%;
       width: 100%;
       z-index: -1;
-      background: rgba(7, 40, 37, 0.8); }
+      background: rgba(7, 40, 37, 0.75); }
 
 /*---LOADER---*/
 .loader {
@@ -201,7 +201,9 @@ body {
 
 .home-heading {
   font-family: "Reenie Beanie", cursive;
-  padding-bottom: 30px; }
+  margin-bottom: 30px;
+  background: rgba(9, 49, 45, 0.5);
+  border-radius: 3px; }
 
 .home-subheading {
   font-family: "Waiting for the Sunrise", cursive;

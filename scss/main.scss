@@ -37,7 +37,9 @@ body {
 // ------- HEADINGS ------
 .home-heading {
   font-family: "Reenie Beanie", cursive;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  background: rgba(lighten($primary-color, 2), 0.5);
+  border-radius: 3px;
 }
 
 .home-subheading {

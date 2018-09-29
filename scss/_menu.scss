@@ -108,7 +108,7 @@
 
     // For current page
     &.current > a {
-      color: $color-white;
+      color: $secondary-color;
     }
   }
 
@@ -125,7 +125,7 @@
     @include easeOut;
 
     &:hover {
-      color: $color-white;
+      color: $secondary-color;
     }
   }
 }
