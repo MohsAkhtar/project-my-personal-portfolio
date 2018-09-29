@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #5d1219;
+    background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -39,14 +39,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #de5561;
+    background: #031211;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #e26a75;
+    background: #072825;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -56,7 +56,7 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #961d28; }
+      border: solid 3px #178f82; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -71,7 +71,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 400;
-    color: #5d1219;
+    color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -93,8 +93,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #e26a75;
-  color: #5d1219;
+  background: #072825;
+  color: #fff;
   height: 100%;
   margin: 0;
   line-height: 1.5;
@@ -111,7 +111,7 @@ body {
       height: 100%;
       width: 100%;
       z-index: -1;
-      background: rgba(226, 106, 117, 0.8); }
+      background: rgba(7, 40, 37, 0.8); }
 
 /*---LOADER---*/
 .loader {
@@ -134,7 +134,8 @@ body {
 
 .home-subheading {
   font-family: "Waiting for the Sunrise", cursive;
-  font-size: 3rem; }
+  font-size: 3rem;
+  letter-spacing: 3px; }
 
 h1,
 h2,
@@ -150,7 +151,8 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(228, 115, 125, 0.5); }
+    background: rgba(9, 49, 45, 0.5);
+    border-radius: 3px; }
 
 a {
   color: #fff;
@@ -162,7 +164,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #961d28; }
+  color: #178f82; }
 
 main {
   padding: 4rem;
@@ -172,7 +174,8 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #961d28;
+        color: #178f82;
+        transform: translateY(-0.3rem) scale(1.1);
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -188,7 +191,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #961d28 3px solid; }
+    border: #178f82 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -199,9 +202,9 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #e67f89;
+    background: #0b3e39;
     padding: 0.5rem;
-    border-bottom: #961d28 5px solid; }
+    border-bottom: #178f82 5px solid; }
 
 .projects {
   display: grid;
@@ -209,11 +212,16 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 3px #fff solid;
+    border-radius: 3px; }
     .projects img:hover {
-      opacity: 0.5;
-      border-color: #961d28;
+      opacity: 0.9;
+      border-color: #178f82;
+      transform: translateY(-0.3rem) scale(1.1);
       transition: all 0.5s ease-out; }
+  .projects:hover img:not(:hover) {
+    transform: scale(0.95);
+    transition: all 0.5s ease-out; }
 
 .boxes {
   display: flex;
@@ -226,10 +234,11 @@ main {
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    border-radius: 3px; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #961d28;
+      background: #178f82;
       color: #fff; }
       .boxes div:hover span {
         color: #fff; }
@@ -238,17 +247,20 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  border-radius: 3px;
+  margin-bottom: 0.5rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #961d28;
-    color: #fff; }
+    background: #178f82;
+    color: #fff;
+    transform: translateY(-0.1rem);
+    transition: all 0.5s ease-out; }
 
 .btn-dark {
-  background: #400d11;
+  background: black;
   color: #fff; }
 
 .btn-light {
-  background: white;
+  background: #4ee0d3;
   color: #111; }
 
 .btn-contact {
@@ -257,8 +269,8 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #da3f4d;
-  color: #5d1219;
+  background: black;
+  color: #fff;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {

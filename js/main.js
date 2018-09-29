@@ -16,6 +16,36 @@ $(window).on("load", function() {
   });
 });
 
+$(document).ready(function() {
+  //---TYPED---
+  const typed = new Typed(".typed", {
+    strings: ["Software Developer, Web Developer, Extraordinaire"],
+    typeSpeed: 90,
+    startDelay: 1000,
+    showCursor: false
+  });
+
+  //---FANCYBOX---
+  $('[data-fancybox^="gallery"]').fancybox({
+    loop: true,
+    keyboard: true,
+    arrows: true,
+    padding: 0,
+    thumbs: {
+      autoStart: true
+    },
+    buttons: [
+      "zoom",
+      "share",
+      "slideShow",
+      "fullScreen",
+      "download",
+      "thumbs",
+      "close"
+    ]
+  });
+});
+
 menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
