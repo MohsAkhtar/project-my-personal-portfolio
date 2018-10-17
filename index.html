@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Reenie+Beanie|Waiting+for+the+Sunrise" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css" media="screen" />
+
   <link rel="icon" type="image/png" href="icons/blueatsign.png">
   <link type="text/css" rel="stylesheet" href="css/main.css" />
 
@@ -107,7 +109,7 @@
     <div class="container">
       <div class="row">
         <div class="heading">
-          <h2># Portfolio</h2>
+          <h2># PORTFOLIO</h2>
         </div>
         <div class="filter">
           <ul id="filters">
@@ -213,6 +215,138 @@
     </div>
   </section>
 
+  <!--Section: Skills-->
+  <div id="skills" class="skills-section section">
+    <div class="container">
+      <div class="row">
+        <div class="heading col m12 center">
+          <h2># TECHNICAL SKILLS</h2>
+          <p>The tools I am currently working with.</p>
+        </div>
+        <div>
+          <div class="technologies">
+            <div class="proficient technology-group col s12 m4 l3">
+              <p>Proficient:</p>
+              <ul>
+                <li> <i class="red-skill fab fa-java" title="java"></i> Java
+                </li>
+                <li> <i class="green-skill fab fa-android" title="android"></i> Android
+                </li>
+                <li> <i class="yellow-skill fab fa-js" title="javascript"></i> JavaScript
+                </li>
+                <li> <i class="dark-blue-skill fab fa-python" title="python"></i> Python
+                </li>
+                <li> <i class="red-skill fab fa-css3" title="css3"></i> CSS
+                </li>
+                <li> <i class="blue-skill fab fa-html5" title="html5"></i> HTML
+                </li>
+              </ul>
+            </div>
+            <div class="learning technology-group col s12 m4 l3">
+              <p>Familiar:</p>
+              <ul>
+                <li> <i class="dark-blue-skill fab fa-php" title="php"></i> PHP
+                </li>
+                <li> <i class="blue-skill fab fa-react" title="react"></i> React
+                </li>
+              </ul>
+            </div>
+            <div class="tools technology-group col s12 m4 l3">
+              <p>Tools I use:</p>
+              <ul>
+                <li> <i class="green-skill fab fa-node" title="node"></i> Node
+                </li>
+                <li> <i class="red-skill fab fa-npm" title="npm"></i> NPM
+                </li>
+                <li> <i class="red-skill fab fa-sass" title="sass"></i> SASS
+                </li>
+                <li> <i class="grey-skill fab fa-windows" title="windows"></i> Windows
+                </li>
+                <li> <i class="grey-skill fab fa-linux" title="linux"></i> Linux
+                </li>
+                <li> <i class="red-skill fab fa-git" title="git"></i> Git
+                </li>
+              </ul>
+            </div>
+            <div class="todo technology-group col s12 m4 l3">
+              <p>Todo:</p>
+              <ul>
+                <li> <i class="red-skill fab fa-angular" title="angular"></i> Angular
+                </li>
+                <li> <i class="blue-skill fab fa-vuejs" title="vue"></i> Vue
+                </li>
+                <li> <i class="red-skill fab fa-laravel" title="laravel"></i> Laravel
+                </li>
+                <li> <i class="blue-skill fab fa-docker" title="docker"></i> Docker
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Section: Stats-->
+  <div id="stats" class="stats-section section">
+    <div class="container">
+      <div class="row">
+        <div class="col m3 s6">
+          <div class="square-item">
+            <div class="square-inner-container">
+              <div class="square-icon">
+                <i class="fa fa-clock"></i>
+                <div class="square-content">
+                  <h2 class="counter">4</h2>
+                  <h3>Years Experience</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m3 s6">
+          <div class="square-item">
+            <div class="square-inner-container">
+              <div class="square-icon">
+                <i class="fas fa-university"></i>
+                <div class="square-content">
+                  <h2>2:1</h2>
+                  <h3>BSc Computer Science</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m3 s6">
+          <div class="square-item">
+            <div class="square-inner-container">
+              <div class="square-icon">
+                <i class="fas fa-code"></i>
+                <div class="square-content">
+                  <h2 class="counter">18</h2>
+                  <h3>Websites Made</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m3 s6">
+          <div class="square-item">
+            <div class="square-inner-container">
+              <div class="square-icon">
+                <i class="fab fa-github"></i>
+                <div class="square-content">
+                  <h2 class="counter">61</h2>
+                  <h3>Projects</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!--Section: Contact-->
   <section id="contact" class="scrollspy contact-section section teal white-text">
     <div class="col m12 center">
@@ -223,7 +357,7 @@
 
 
   <!--Footer-->
-  <div class="copyright-section section">
+  <div class="copyright-section section black">
     <div class="col m12">
       <p>&copy; Copyright Mohs Akhtar 2018</p>
       <a href="https://icons8.com/android-L ">Free icons by Icons8</a>
@@ -242,6 +376,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/isotope.pkgd.min.js "></script>
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js "></script>
 
 </body>
