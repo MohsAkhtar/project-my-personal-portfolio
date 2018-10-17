@@ -1,0 +1,98 @@
+// Widescreens
+@include mediaXl {
+  // changes work projects to have four across a row
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// Desktops and Laptops
+@include mediaLg {
+  // changes work projects to have three across a row
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Tablets and small laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    // For Name heading
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    // Make the branding and navbar single
+    // columned downward for medium and small screens
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    // slide in from left
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    // branding only takes 25% of screen
+    height: 25vh;
+    // slide in from right
+    transform: translate3d(100%, 0, 0);
+
+    // change portrait to smaller version of image
+    .portrait {
+      background: url("../img/portrait_small.jpg");
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  // Grid layout changes so its stacked on top of eachother
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+  }
+
+  // changes work projects to have two across a row
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  main#home h1 {
+    // lower h1 by 10vh
+    margin-top: 10vh;
+  }
+
+  .lg-heading {
+    text-align: center;
+    color: black;
+  }
+
+  // changes work projects to have one col across a row
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}

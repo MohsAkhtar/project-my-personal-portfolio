@@ -1,72 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Reenie+Beanie|Waiting+for+the+Sunrise" rel="stylesheet">
-    <link rel="icon" type="image/png" href="icons/blueatsign.png">
-    <title>Mohs Akhtar Portfolio</title>
-    <script src="js/jquery-3.3.1.min.js"></script>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Reenie+Beanie|Waiting+for+the+Sunrise" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="icons/blueatsign.png">
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohs Akhtar Portfolio</title>
 </head>
 
-<body id="bg-img">
-    <div class="loader">
-        <div class="inner">
-
+<body id="home" class="scrollspy">
+  <div class="navbar-fixed">
+    <nav class="teal">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#home" class="brand-logo"></a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-    </div>
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
-
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item current">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link">My Work</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">How To Reach Me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main id="home">
-        <h1 class="lg-heading home-heading">
+      </div>
+    </nav>
+  </div>
+  <!--Side Nav-->
+  <ul class="side-nav" id="mobile-nav">
+    <h4 class="teal center">Mohs Akhtar</h4>
+    <li><a class="divider"></a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <!--Section: Heading-->
+  <section class="section heading-section primary-overlay">
+    <div class="row">
+      <div class="col s12 main-text center">
+        <div class="intro-text">
+          <h1 class="home-heading">
             Mohs
             <span class="text-secondary">Akhtar</span>
-        </h1>
-        <h2 class="sm-heading home-subheading">Software Developer / Web Developer</h2>
-        <div class="icons">
-            <a href="https://github.com/MohsAkhtar" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-            <a href="www.linkedin.com/in/mohsakhtar" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="mailTo:mohsin.akhtar0@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-2x"></i></a>
-            <a href="https://twitter.com/MohsAkhtar" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
-            <a href="https://www.facebook.com/mohs.akhtar" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
-            <a href="https://www.goodreads.com/user/show/4430210-mohs" target="_blank"><i class="fab fa-goodreads fa-2x"></i></a>
+          </h1>
+          <h2 class="home-subheading">Software Developer / Web Developer</h2>
         </div>
+        <div class="icons">
+          <a href="https://github.com/MohsAkhtar" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+          <a href="www.linkedin.com/in/mohsakhtar" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="mailTo:mohsin.akhtar0@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-2x"></i></a>
+          <a href="https://twitter.com/MohsAkhtar" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+          <a href="https://www.facebook.com/mohs.akhtar" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+          <a href="https://www.goodreads.com/user/show/4430210-mohs" target="_blank"><i class="fab fa-goodreads fa-2x"></i></a>
+        </div>
+        <a href="#contact" class="white-text">
+          <i class="material-icons medium scroll-icon">arrow_drop_down_circle</i>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    </main>
+  <!--Section: About-->
+  <section id="about" class="scrollspy about-section section">
+    <div class="container">
+      <div class="row">
+        <div class="col m5">
+          <img class="about-image" src="img/about.jpg" alt="">
+        </div>
+        <div class="col m7">
+          <div class="about-intro">
+            <h4># About Mohs Akhtar</h4>
+            <h4 class="typed-intro"></h4>
+            <p>Mohs Akhtar is a computer science graduate from Edinburgh Napier University.
+              He has a strong background with front-end/back-end development, problem solving,
+              and technical writing.
+            </p>
+            <p>
+              Ever since learning to code his first application at the age of 15, Mohs developed
+              a passion for software and web development that would carrry him on over the next few years.
+            </p>
+            <p>
+              Proficient in Java, Python, JavaScript and SQL amongst other tools. Mohs has worked
+              on various projects be it group or solo projects. He is familiar with Agile methodolgies
+              as well as team communication tools such as Slack.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/typed.min.js "></script>
-    <script src="js/main.js"></script>
+  <!--Section: Portfolio-->
+  <section id="portfolio" class="scrollspy portfolio-section section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2># Portfolio</h2>
+        </div>
+        <div class="filter">
+          <ul id="filters">
+            <li><a href="#" data-filter="*" class="current">ALL</a></li>
+            <li><a href="#" data-filter=".apps">Apps</a></li>
+            <li><a href="#" data-filter=".websites">Websites</a></li>
+          </ul>
+        </div>
+        <div class="itemsContainer">
+          <ul class="items">
+            <!--PORTFOLIO-->
+            <li class="websites col s12 m6 l3">
+              <div class="item">
+                <img src="img/portfolio/thumbnails/thumbnail_portfolio.png" class="thumbnail" alt="">
+                <div class="icons">
+                  <a href="img/portfolio/portfolio_home.png" title="View Image" class="fancybox openButton"
+                    data-fancybox="gallery01" data-caption="Behaviour changing app to encourage users to exercise.">
+                    <i class=" fa fa-search "></i>
+                  </a>
+                  <div class="hidden">
+                    <a class="fancybox" data-fancybox="gallery01" href="img/portfolio/portfolio_work.png"></a>
+                  </div>
+                  <a href="https://mohsakhtar.github.io/modern_portfolio_website/" target="_blank" class="projectLink">
+                    <i class="fa fa-link "></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </div>
+            </li>
+            <!--CONTACT_MGR-->
+            <li class="websites col s12 m6 l3">
+              <div class="item">
+                <img src="img/portfolio/thumbnails/thumbnail_contact_mgr.png" class="thumbnail" alt="">
+                <div class="icons">
+                  <a href="img/portfolio/contact_mgr.png" title="View Image" class="openButton" data-fancybox="gallery02"
+                    data-caption="A contact manager app created in React">
+                    <i class=" fa fa-search "></i>
+                  </a>
+                  <div class="hidden">
+                    <a class="fancybox" data-fancybox="gallery02" href="img/portfolio/contact_mgr_add.png"></a>
+                    <a class="fancybox" data-fancybox="gallery02" href="img/portfolio/contact_mgr_edit.png"></a>
+                  </div>
+                  <a href="https://mohsakhtar.github.io/contactmanager/" target="_blank" class="projectLink">
+                    <i class="fa fa-link "></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </div>
+            </li>
+            <!--MOVIE_APP-->
+            <li class="apps col s12 m6 l3">
+              <div class="item">
+                <img src="img/portfolio/thumbnails/thumbnail_movie_app.png" class="thumbnail" alt="">
+                <div class="icons">
+                  <a href="img/portfolio/movie_app.png" title="View Image" class="openButton" data-fancybox="gallery03"
+                    data-caption="Website that pulls data from the imdb api">
+                    <i class=" fa fa-search "></i>
+                  </a>
+                  <div class="hidden">
+                    <a class="fancybox" data-fancybox="gallery03" href="img/portfolio/movie_app_search.png"></a>
+                    <a class="fancybox" data-fancybox="gallery03" href="img/portfolio/movie_app_film.png"></a>
+                  </div>
+                  <a href="https://mohsakhtar.github.io/movie_info_app/" target="_blank" class="projectLink">
+                    <i class="fa fa-link "></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </div>
+            </li>
+            <!--BCT_APP-->
+            <li class="apps col s12 m6 l3">
+              <div class="item">
+                <img src="img/portfolio/thumbnails/thumbnail_bct_app.png" class="thumbnail" alt="">
+                <div class="icons">
+                  <a href="img/portfolio/bct_app.png" title="View Image" class="openButton" data-fancybox data-caption="BCT app for encouraging a person to exercise">
+                    <i class=" fa fa-search "></i>
+                  </a>
+                  <a href="https://github.com/MohsAkhtar/behaviour_changing_mobile_app" target="_blank" class="projectLink">
+                    <i class="fa fa-link "></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </div>
+            </li>
+            <!--NATOURS-->
+            <li class="websites col s12 m6 l3">
+              <div class="item">
+                <img src="img/portfolio/thumbnails/thumbnail_natours.png" class="thumbnail" alt="">
+                <div class="icons">
+                  <a href="img/portfolio/natours.png" title="View Image" class="openButton" data-fancybox data-caption="">
+                    <i class=" fa fa-search "></i>
+                  </a>
+                  <a href="https://github.com/MohsAkhtar/natours" target="_blank" class="projectLink">
+                    <i class="fa fa-link "></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Section: Contact-->
+  <section id="contact" class="scrollspy contact-section section teal white-text">
+    <div class="col m12 center">
+      <p class="subHeading">Like what you see?</p>
+      <a href="mailTo:mohs.akhtar@gmail.com" class="contactButton">GET IN TOUCH!</a>
+    </div>
+  </section>
+
+
+  <!--Footer-->
+  <div class="copyright-section section">
+    <div class="col m12">
+      <p>&copy; Copyright Mohs Akhtar 2018</p>
+      <a href="https://icons8.com/android-L ">Free icons by Icons8</a>
+      <div class="links">
+        <a href="https://github.com/MohsAkhtar" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="www.linkedin.com/in/mohsakhtar" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailTo:mohs.akhtar@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+        <a href="https://twitter.com/MohsAkhtar" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.facebook.com/mohs.akhtar" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.goodreads.com/user/show/4430210-mohs" target="_blank"><i class="fab fa-goodreads"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/isotope.pkgd.min.js "></script>
+  <script src="js/main.js "></script>
+
 </body>
 
 </html>
