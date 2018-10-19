@@ -360,7 +360,7 @@ body {
   left: 0px;
 }
 .square-content h2 {
-  font-size: 56px;
+  font-size: 50px;
   margin-bottom: 10px;
   font-weight: 400;
   color: #1f4788;
@@ -372,7 +372,8 @@ body {
 }
 .square-icon .fa,
 .square-icon .fas,
-.square-icon .fab {
+.square-icon .fab,
+.square-icon .far {
   position: absolute;
   left: 50%;
   top: -10%;
