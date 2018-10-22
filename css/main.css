@@ -52,7 +52,7 @@ nav {
 /* ---HEADING SECTION--- */
 .heading-section {
   background: linear-gradient(0deg, rgba(7, 40, 37, 0.75), rgba(0, 0, 0, 0.7)),
-    url(../img/slide.jpg);
+    url(../img/slide-min.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -109,7 +109,7 @@ nav {
 /* ---ABOUT SECTION--- */
 .about-section .about-image {
   max-width: 100%;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   padding: 50px 0;
 }
 .about-section .about-intro {
@@ -366,6 +366,11 @@ nav {
   margin-bottom: 10px;
   font-weight: 400;
   color: #1f4788;
+}
+@media screen and (max-width: 850px) {
+  .square-content h2 {
+    font-size: 30px;
+  }
 }
 .square-content h3 {
   font-size: 13px;
